@@ -1,0 +1,120 @@
+---
+config:
+  layout: elk
+---
+classDiagram
+    
+    class LoginForm{
+      LoginButton()
+      ExitButton()
+      IdTextbox string
+      PasswordTextbox string
+    }
+    class CreateMaterialForm{
+      CoursesNameTextbox string
+      CoursesMajorTextbox string
+      CoursesHourTextbox string
+      PrerequisiteIDListbox string
+      AddCoursesButton()
+      BackDashboardButton()
+    }
+    class CreateDivisionMaterialForm{
+      CoursesNameTextbox string
+      SetTimeTextbox string
+      SetDateTextbox string
+      SetCapacityTextbox intger
+      SetLecturerTextbox string
+      CheckCourseButton()
+      SaveMaterial()
+    }
+    class DashboardForm{
+      LogoutButton()
+      ToCreateMaterialFormButton()
+      ToMangeMaterialFormButton()
+    }
+
+    class Courses{
+      id varchar 
+      name varchar 
+      prerequisite_id varchar 
+      major varchar
+      hours int
+    }
+
+    class Users{
+      id varchar 
+      username varchar
+      role UserRole 
+      password varchar
+    }
+    
+    class Division{
+    id int
+    Courses_id varchar
+    Capacity int
+    time varchar
+    date varchar 
+    Lecturer varchar
+    }
+
+
+
+
+    class UserRepository{
+      GetAllUsers()
+      GetUserById()
+      AddUser()
+      CheckPassword()
+    }
+    class CourseRepository{
+      GetAllCourses()
+      GetCourseById()
+      AddCourse()
+    }
+    class DivisionRepository{
+      GetAllDivisions()
+      GetDivisionById()
+      AddDivision()
+    }
+
+    class ConnectWithDB{
+      conninctonString string static
+    }
+
+
+
+    class UserRole{
+      <<enumeration>>
+      Admin
+      Registrar
+      Student
+      Finance
+      Lecturer
+    }
+
+    Users ..> UserRole
+    UserRepository ..> UserRole
+
+    LoginForm ..> UserRole
+    LoginForm ..> Users
+    LoginForm --> DashboardForm
+    LoginForm --> UserRepository
+
+    DashboardForm --> CreateMaterialForm
+    DashboardForm --> CreateDivisionMaterialForm
+     
+    CreateMaterialForm ..> Courses
+    CreateMaterialForm --> CourseRepository
+
+    CreateDivisionMaterialForm ..> Division
+    CreateDivisionMaterialForm --> DivisionRepository
+    CreateDivisionMaterialForm --> CourseRepository
+
+
+    UserRepository --> ConnectWithDB
+    DivisionRepository --> ConnectWithDB
+    CourseRepository --> ConnectWithDB
+
+    UserRepository ..> Users
+    CourseRepository ..> Courses
+    DivisionRepository ..> Division
