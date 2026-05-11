@@ -1,0 +1,11 @@
+D:\Lorns\Projects\WinApp\UniversitySystem\bin\Debug\UniversitySystem.exe.config
+D:\Lorns\Projects\WinApp\UniversitySystem\bin\Debug\UniversitySystem.exe
+D:\Lorns\Projects\WinApp\UniversitySystem\bin\Debug\UniversitySystem.pdb
+D:\Lorns\Projects\WinApp\UniversitySystem\obj\Debug\UniversitySystem.csproj.AssemblyReference.cache
+D:\Lorns\Projects\WinApp\UniversitySystem\obj\Debug\UniversitySystem.Properties.Resources.resources
+D:\Lorns\Projects\WinApp\UniversitySystem\obj\Debug\UniversitySystem.csproj.GenerateResource.cache
+D:\Lorns\Projects\WinApp\UniversitySystem\obj\Debug\UniversitySystem.csproj.CoreCompileInputs.cache
+D:\Lorns\Projects\WinApp\UniversitySystem\obj\Debug\UniversitySystem.exe
+D:\Lorns\Projects\WinApp\UniversitySystem\obj\Debug\UniversitySystem.pdb
+D:\Lorns\Projects\WinApp\UniversitySystem\obj\Debug\UniversitySystem.Forms.LoginForm.resources
+D:\Lorns\Projects\WinApp\UniversitySystem\obj\Debug\UniversitySystem.Forms.DashboardForm.resources
