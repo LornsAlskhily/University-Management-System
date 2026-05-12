@@ -14,7 +14,26 @@ namespace UniversitySystem.Repositories
     {
         public bool AddDivision(Divisions divisons)
         {
-            throw new NotImplementedException();
+
+            if (divisons == null) return false;
+            using (SqlConnection conn = new SqlConnection(ConnectWithDB.ConnectionString))
+            {
+
+                conn.Open();
+                string query = "insert into Division (id,courses_id,capacity,time,date,lecturer) values (@Id,@CoursesId,@Capacity,@Time,@Date,@Lecturer);";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Id", divisons.Id);
+                    cmd.Parameters.AddWithValue("@CoursesId", divisons.Courses_id);
+                    cmd.Parameters.AddWithValue("@Capacity", divisons.Capacity);
+                    cmd.Parameters.AddWithValue("@Time", divisons.Time);
+                    cmd.Parameters.AddWithValue("@Date", divisons.Date);
+                    cmd.Parameters.AddWithValue("@Lecturer", divisons.Lecturer);
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+
+            }
         }
 
         public List<Divisions> GetAllDivisions()
@@ -24,6 +43,8 @@ namespace UniversitySystem.Repositories
 
         public bool GetDivisionById(int id, string courseId)
         {
+            //select* from Division where id = 2 and courses_id = 1000
+
             throw new NotImplementedException();
         }
     }

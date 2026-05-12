@@ -67,7 +67,7 @@ namespace UniversitySystem.Repositories
                 string query = "insert into Courses (id,name,prerequisite_id,major,hours) values (@Id,@name,@prerequisite_id,@major,@hours);";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@id", courses.Id);
+                    cmd.Parameters.AddWithValue("@Id", courses.Id);
                     cmd.Parameters.AddWithValue("@name", courses.Name);
                     cmd.Parameters.AddWithValue("@prerequisite_id", courses.PrerequisiteId);
                     cmd.Parameters.AddWithValue("@major", courses.Major);
@@ -87,8 +87,9 @@ namespace UniversitySystem.Repositories
         {
             Courses course = new Courses();
             course.Hours =(int) reader["Hours"];
-            course.PrerequisiteId = reader["PrerequisitedId"].ToString();
+            course.PrerequisiteId = reader["prerequisite_id"].ToString();
             course.Id = reader["id"].ToString();
+            course.Name = reader["name"].ToString();
             course.Major = reader["major"].ToString();
             return course;
         }
