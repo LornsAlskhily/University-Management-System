@@ -1,7 +1,7 @@
 ﻿
 namespace UniversitySystem.Models
 {
-    public class Division
+    public class Divisions
     {
         public int Id { get; set; }
         public string Courses_id { get; set; }

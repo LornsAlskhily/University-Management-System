@@ -3,36 +3,6 @@ config:
   layout: elk
 ---
 classDiagram
-    
-    class LoginForm{
-      LoginButton()
-      ExitButton()
-      IdTextbox string
-      PasswordTextbox string
-    }
-    class CreateMaterialForm{
-      CoursesNameTextbox string
-      CoursesMajorTextbox string
-      CoursesHourTextbox string
-      PrerequisiteIDListbox string
-      AddCoursesButton()
-      BackDashboardButton()
-    }
-    class CreateDivisionMaterialForm{
-      CoursesNameTextbox string
-      SetTimeTextbox string
-      SetDateTextbox string
-      SetCapacityTextbox intger
-      SetLecturerTextbox string
-      CheckCourseButton()
-      SaveMaterial()
-    }
-    class DashboardForm{
-      LogoutButton()
-      ToCreateMaterialFormButton()
-      ToMangeMaterialFormButton()
-    }
-
     class Courses{
       id varchar 
       name varchar 
@@ -47,34 +17,75 @@ classDiagram
       role UserRole 
       password varchar
     }
-    
+
     class Division{
     id int
-    Courses_id varchar
+    CourseId varchar
     Capacity int
     time varchar
     date varchar 
     Lecturer varchar
     }
+     class UsersServices{
+      IdGeneration string()
+      Signin Users(stirng id, string password)
+    }
+
+    class CoursesServices{
+      IdGeneration string()
+      CreateCourse bool(Courses course)
+    }
+
+    class DivisionServices{
+      IdGeneration string()
+      CreateDivison bool (Divisions divison,string courseId)
+    }
+
+
+    class IUserRepository{
+      <<interface>>
+      GetAllUsers List<Users>()
+      GetUserById Users(string id)
+      AddUser bool(Users user)
+      CheckPassword bool(string id, string password)
+    }
+    
+    class IDivisionRepository{
+      <<interface>>
+      GetAllDivisions List<Divisions>()
+      GetDivisionById bool(int id, string courseId)
+      AddDivision bool(Divisions divisons)
+    }
+    class ICourseRepository{
+      <<interface>>
+      GetAllCourses List<Courses>()
+      GetCourseById Courses(string id)
+      AddCourse bool(Courses course)
+    }
+
+   
+
+
+    
 
 
 
 
     class UserRepository{
-      GetAllUsers()
-      GetUserById()
-      AddUser()
-      CheckPassword()
+      GetAllUsers List<Users>()
+      GetUserById Users(string id)
+      AddUser bool(Users user)
+      CheckPassword bool(string id, string password)
     }
     class CourseRepository{
-      GetAllCourses()
-      GetCourseById()
-      AddCourse()
+      GetAllCourses List<Courses>()
+      GetCourseById bool(string id)
+      AddCourse bool(Courses course)
     }
     class DivisionRepository{
-      GetAllDivisions()
-      GetDivisionById()
-      AddDivision()
+      GetAllDivisions List<Divisions>()
+      GetDivisionById bool(int id, string courseId)
+      AddDivision bool(Divisoins divisons)
     }
 
     class ConnectWithDB{
@@ -91,30 +102,36 @@ classDiagram
       Finance
       Lecturer
     }
-
     Users ..> UserRole
+
+    UsersServices --> IUserRepository
+    UsersServices ..> Users
+    UsersServices ..> UserRole
+
+    IUserRepository <|.. UserRepository
+    IUserRepository ..> Users
+    IUserRepository ..> UserRole
+
+    UserRepository ..>  ConnectWithDB
     UserRepository ..> UserRole
-
-    LoginForm ..> UserRole
-    LoginForm ..> Users
-    LoginForm --> DashboardForm
-    LoginForm --> UserRepository
-
-    DashboardForm --> CreateMaterialForm
-    DashboardForm --> CreateDivisionMaterialForm
-     
-    CreateMaterialForm ..> Courses
-    CreateMaterialForm --> CourseRepository
-
-    CreateDivisionMaterialForm ..> Division
-    CreateDivisionMaterialForm --> DivisionRepository
-    CreateDivisionMaterialForm --> CourseRepository
-
-
-    UserRepository --> ConnectWithDB
-    DivisionRepository --> ConnectWithDB
-    CourseRepository --> ConnectWithDB
-
     UserRepository ..> Users
-    CourseRepository ..> Courses
+
+    CoursesServices -->ICourseRepository
+    CoursesServices ..>Courses
+
+    ICourseRepository <|..CourseRepository
+    ICourseRepository ..> Courses
+
+
+    CourseRepository ..>ConnectWithDB
+    CourseRepository..>Courses
+
+    DivisionServices -->IDivisionRepository
+    DivisionServices ..>Division
+    DivisionServices -->ICourseRepository
+
+    IDivisionRepository <|.. DivisionRepository
+    IDivisionRepository..>Division
+
+    DivisionRepository ..>ConnectWithDB
     DivisionRepository ..> Division

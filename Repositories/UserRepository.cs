@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using UniversitySystem.Models;
+using UniversitySystem.Interfaces;
+
+
 namespace UniversitySystem.Repositories
 {
-    public class UserRepository
+    public class UserRepository : IUserRepository
     {
 
         public bool AddUser(Users user)

@@ -1,49 +1,70 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\",
+  "WorkspaceRootPath": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CDC29573-1BC6-42DA-A119-8DD0198CB334}|..\\TestConsole\\TestConsole.csproj|d:\\lorns\\projects\\git\\univsys\\testconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|d:\\lorns\\projects\\winapp\\universitysystem\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|UniversitySystem||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|d:\\lorns\\projects\\winapp\\universitysystem\\forms\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:forms\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\repositories\\coursesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:repositories\\coursesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\interfaces\\icoursesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:interfaces\\icoursesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\services\\divisionsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:services\\divisionsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\services\\coursesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:services\\coursesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/localhost/UnivSysDB/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\connectwithdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\connectwithdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:connectwithdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\models\\division.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\models\\division.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:models\\division.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:models\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|d:\\lorns\\projects\\git\\univsys\\university-management-system\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,19 +82,104 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DashboardForm.cs [Design]",
-              "DocumentMoniker": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Forms\\DashboardForm.cs",
-              "RelativeDocumentMoniker": "Forms\\DashboardForm.cs",
-              "ToolTip": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Forms\\DashboardForm.cs [Design]",
-              "RelativeToolTip": "Forms\\DashboardForm.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\TestConsole\\Program.cs",
+              "RelativeDocumentMoniker": "..\\TestConsole\\Program.cs",
+              "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\TestConsole\\Program.cs",
+              "RelativeToolTip": "..\\TestConsole\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-10T10:29:15.407Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-05-12T10:28:15.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UniversitySystem",
+              "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\UniversitySystem.csproj",
+              "RelativeDocumentMoniker": "UniversitySystem.csproj",
+              "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\UniversitySystem.csproj",
+              "RelativeToolTip": "UniversitySystem.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-12T10:25:41.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICoursesRepository.cs",
+              "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Interfaces\\ICoursesRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ICoursesRepository.cs",
+              "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Interfaces\\ICoursesRepository.cs",
+              "RelativeToolTip": "Interfaces\\ICoursesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T08:39:31.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IUserRepository.cs",
+              "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T08:31:17.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DivisionsServices.cs",
+              "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Services\\DivisionsServices.cs",
+              "RelativeDocumentMoniker": "Services\\DivisionsServices.cs",
+              "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Services\\DivisionsServices.cs",
+              "RelativeToolTip": "Services\\DivisionsServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T08:26:25.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CoursesServices.cs",
+              "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Services\\CoursesServices.cs",
+              "RelativeDocumentMoniker": "Services\\CoursesServices.cs",
+              "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Services\\CoursesServices.cs",
+              "RelativeToolTip": "Services\\CoursesServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T08:25:54.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Services\\UserServices.cs",
+              "RelativeDocumentMoniker": "Services\\UserServices.cs",
+              "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Services\\UserServices.cs",
+              "RelativeToolTip": "Services\\UserServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T08:25:19.045Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "CoursesRepository.cs",
+              "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Repositories\\CoursesRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\CoursesRepository.cs",
+              "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Repositories\\CoursesRepository.cs",
+              "RelativeToolTip": "Repositories\\CoursesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T10:42:58.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "dbo.Users.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost/UnivSysDB/True/SqlTable/dbo.Users.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/localhost/UnivSysDB/True/SqlTable/dbo.Users.sql",
@@ -84,34 +190,21 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "UserRepository.cs",
-              "DocumentMoniker": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Repositories\\UserRepository.cs",
+              "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
-              "ToolTip": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "Repositories\\UserRepository.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAQwGkAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-09T14:55:21.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
-              "ToolTip": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Forms\\LoginForm.cs",
-              "RelativeToolTip": "Forms\\LoginForm.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAIAwwC4AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T18:28:38.09Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "Division.cs",
-              "DocumentMoniker": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Models\\Division.cs",
+              "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Models\\Division.cs",
               "RelativeDocumentMoniker": "Models\\Division.cs",
-              "ToolTip": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Models\\Division.cs",
+              "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Models\\Division.cs",
               "RelativeToolTip": "Models\\Division.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -119,11 +212,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "Courses.cs",
-              "DocumentMoniker": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Models\\Courses.cs",
+              "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Models\\Courses.cs",
               "RelativeDocumentMoniker": "Models\\Courses.cs",
-              "ToolTip": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Models\\Courses.cs",
+              "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Models\\Courses.cs",
               "RelativeToolTip": "Models\\Courses.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -131,11 +224,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "UserRole.cs",
-              "DocumentMoniker": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Models\\UserRole.cs",
+              "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Models\\UserRole.cs",
               "RelativeDocumentMoniker": "Models\\UserRole.cs",
-              "ToolTip": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Models\\UserRole.cs",
+              "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Models\\UserRole.cs",
               "RelativeToolTip": "Models\\UserRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -143,11 +236,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Users.cs",
-              "DocumentMoniker": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Models\\Users.cs",
+              "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Models\\Users.cs",
               "RelativeDocumentMoniker": "Models\\Users.cs",
-              "ToolTip": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Models\\Users.cs",
+              "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Models\\Users.cs",
               "RelativeToolTip": "Models\\Users.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -155,39 +248,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Program.cs",
+              "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Program.cs",
+              "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T18:27:56.559Z"
+              "WhenOpened": "2026-05-07T18:27:56.559Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "ConnectWithDB.cs",
-              "DocumentMoniker": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\ConnectWithDB.cs",
+              "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\ConnectWithDB.cs",
               "RelativeDocumentMoniker": "ConnectWithDB.cs",
-              "ToolTip": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\ConnectWithDB.cs",
+              "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\ConnectWithDB.cs",
               "RelativeToolTip": "ConnectWithDB.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-07T17:47:40.604Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
-              "ToolTip": "D:\\Lorns\\Projects\\WinApp\\UniversitySystem\\Forms\\LoginForm.cs [Design]",
-              "RelativeToolTip": "Forms\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T17:12:54.359Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

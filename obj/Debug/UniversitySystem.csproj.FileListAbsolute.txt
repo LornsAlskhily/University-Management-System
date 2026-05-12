@@ -9,3 +9,12 @@ D:\Lorns\Projects\WinApp\UniversitySystem\obj\Debug\UniversitySystem.exe
 D:\Lorns\Projects\WinApp\UniversitySystem\obj\Debug\UniversitySystem.pdb
 D:\Lorns\Projects\WinApp\UniversitySystem\obj\Debug\UniversitySystem.Forms.LoginForm.resources
 D:\Lorns\Projects\WinApp\UniversitySystem\obj\Debug\UniversitySystem.Forms.DashboardForm.resources
+D:\Lorns\Projects\git\UnivSys\University-Management-System\bin\Debug\UniversitySystem.pdb
+D:\Lorns\Projects\git\UnivSys\University-Management-System\obj\Debug\UniversitySystem.csproj.AssemblyReference.cache
+D:\Lorns\Projects\git\UnivSys\University-Management-System\obj\Debug\UniversitySystem.Properties.Resources.resources
+D:\Lorns\Projects\git\UnivSys\University-Management-System\obj\Debug\UniversitySystem.csproj.GenerateResource.cache
+D:\Lorns\Projects\git\UnivSys\University-Management-System\obj\Debug\UniversitySystem.csproj.CoreCompileInputs.cache
+D:\Lorns\Projects\git\UnivSys\University-Management-System\obj\Debug\UniversitySystem.pdb
+D:\Lorns\Projects\git\UnivSys\University-Management-System\bin\Debug\UniversitySystem.dll.config
+D:\Lorns\Projects\git\UnivSys\University-Management-System\bin\Debug\UniversitySystem.dll
+D:\Lorns\Projects\git\UnivSys\University-Management-System\obj\Debug\UniversitySystem.dll
