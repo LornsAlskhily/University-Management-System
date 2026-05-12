@@ -60,20 +60,11 @@ namespace UniversitySystem.Repositories
         {
 
             if (courses == null) return false;
-
-
             using (SqlConnection conn = new SqlConnection(ConnectWithDB.ConnectionString))
             {
-                string query = "select count(*) from Courses where id = @id";
 
                 conn.Open();
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@Id", courses.Id);
-                    int counter = (int)cmd.ExecuteScalar();
-                    if (counter > 0) return false;
-                }
-                query = "insert into Courses (id,name,prerequisite_id,major,hours) values (@Id,@name,@prerequisite_id,@major,@hours);";
+                string query = "insert into Courses (id,name,prerequisite_id,major,hours) values (@Id,@name,@prerequisite_id,@major,@hours);";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@id", courses.Id);

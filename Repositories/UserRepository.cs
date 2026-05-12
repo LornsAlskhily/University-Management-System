@@ -17,34 +17,20 @@ namespace UniversitySystem.Repositories
 
 
             using (SqlConnection conn = new SqlConnection(ConnectWithDB.ConnectionString))
-            {
-                string query = "select count(*) from Users where id = @id";
-                try
+            {     
+                conn.Open();                
+                string query = "insert into Users (id,username,role,password) values (@Id,@username,@role,@password);";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    conn.Open();
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@Id", user.Id);
-                        int counter = (int)cmd.ExecuteScalar();
-                        if (counter > 0) return false;
-                    }
-                    query = "insert into Users (id,username,role,password) values (@Id,@username,@role,@password);";
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@id", user.Id);
-                        cmd.Parameters.AddWithValue("@username", user.Username);
-                        cmd.Parameters.AddWithValue("@Role", user.Role.ToString());
-                        cmd.Parameters.AddWithValue("@Password", user.Password);
-                        cmd.ExecuteNonQuery();
-
-                        return true;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception("خطء بالشسمو" + ex.ToString());
+                    cmd.Parameters.AddWithValue("@id", user.Id);
+                    cmd.Parameters.AddWithValue("@username", user.Username);
+                    cmd.Parameters.AddWithValue("@Role", user.Role.ToString());
+                    cmd.Parameters.AddWithValue("@Password", user.Password);
+                    cmd.ExecuteNonQuery();
+                    return true;
                 }
             }
+            
         }
 
         public List<Users> GetAllUsers() {
