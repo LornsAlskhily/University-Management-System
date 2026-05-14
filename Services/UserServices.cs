@@ -1,19 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using UniversitySystem.Interfaces;
 using UniversitySystem.Models;
 
 namespace UniversitySystem.Services
 {
-    public class UserServices
+    public class UserServices : IUserServices
     {
         public string IdGeneration()
         {
             throw new NotImplementedException();
         }
-        bool CreateCourse(Courses course)
+        public bool CreateCourse(Courses course)
         {
             throw new NotImplementedException();
         }

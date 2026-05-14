@@ -52,7 +52,9 @@
     <Compile Include="ConnectWithDB.cs" />
     <Compile Include="Interfaces\ICoursesRepository.cs" />
     <Compile Include="Interfaces\IDivisionRepository.cs" />
+    <Compile Include="Interfaces\IDivisionsServices.cs" />
     <Compile Include="Interfaces\IUserRepository.cs" />
+    <Compile Include="Interfaces\IUserServices.cs" />
     <Compile Include="Models\Courses.cs" />
     <Compile Include="Models\Divisions.cs" />
     <Compile Include="Models\Users.cs" />
@@ -64,6 +66,7 @@
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="Services\CoursesServices.cs" />
     <Compile Include="Services\DivisionsServices.cs" />
+    <Compile Include="Interfaces\ICoursesServices.cs" />
     <Compile Include="Services\UserServices.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

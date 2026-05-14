@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using UniversitySystem.Interfaces;
 using UniversitySystem.Models;
 namespace UniversitySystem.Services
 {
-    public class CoursesServices
+    public class CoursesServices : ICoursesServices
     {
       public string IdGeneration()
         {

@@ -26,20 +26,39 @@ classDiagram
     date varchar 
     Lecturer varchar
     }
+
      class UsersServices{
-      IdGeneration string()
       Signin Users(stirng id, string password)
     }
 
     class CoursesServices{
-      IdGeneration string()
       CreateCourse bool(Courses course)
     }
 
     class DivisionServices{
-      IdGeneration string()
       CreateDivison bool (Divisions divison,string courseId)
     }
+
+
+    class IUsersServices{
+      <<interface>>
+      Signin Users(stirng id, string password)
+    }
+
+    class ICoursesServices{
+      <<interface>>
+      CreateCourse bool(Courses course)
+    }
+
+    class IDivisionServices{
+      <<interface>>
+      CreateDivison bool (Divisions divison,string courseId)
+    }
+
+
+
+
+
 
 
     class IUserRepository{
@@ -79,7 +98,7 @@ classDiagram
     }
     class CourseRepository{
       GetAllCourses List<Courses>()
-      GetCourseById bool(string id)
+      GetCourseById Courses(string id)
       AddCourse bool(Courses course)
     }
     class DivisionRepository{
@@ -104,6 +123,8 @@ classDiagram
     }
     Users ..> UserRole
 
+    IUsersServices<|..UsersServices
+
     UsersServices --> IUserRepository
     UsersServices ..> Users
     UsersServices ..> UserRole
@@ -116,6 +137,8 @@ classDiagram
     UserRepository ..> UserRole
     UserRepository ..> Users
 
+    ICoursesServices <|.. CoursesServices
+
     CoursesServices -->ICourseRepository
     CoursesServices ..>Courses
 
@@ -125,6 +148,8 @@ classDiagram
 
     CourseRepository ..>ConnectWithDB
     CourseRepository..>Courses
+
+    IDivisionServices<|..DivisionServices
 
     DivisionServices -->IDivisionRepository
     DivisionServices ..>Division
