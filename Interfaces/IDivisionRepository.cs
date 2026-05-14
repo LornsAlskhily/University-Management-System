@@ -7,7 +7,7 @@ namespace TestConsole
     internal interface IDivisionRepository
     {
         List<Divisions> GetAllDivisions();
-        bool GetDivisionById(int id, string courseId);
+        Divisions GetDivisionById(int id, string courseId);
         bool AddDivision(Divisions divisons);
     }
 }

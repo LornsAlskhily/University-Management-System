@@ -40,12 +40,37 @@ namespace UniversitySystem.Repositories
         {
             throw new NotImplementedException();
         }
-
-        public bool GetDivisionById(int id, string courseId)
+        public Divisions GetDivisionById(int id, string courseId)
         {
-            //select* from Division where id = 2 and courses_id = 1000
+            using (SqlConnection conn = new SqlConnection(ConnectWithDB.ConnectionString))
+            {
+                string query = "select * from Division where id = @id and courses_id = @courseId";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.Parameters.AddWithValue("@courseId", courseId);
+                    conn.Open();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        return reader.Read() ? MapReaderToDivision(reader) : null;
+                    }
 
-            throw new NotImplementedException();
+                }
+
+            }
+        }
+
+
+        private Divisions MapReaderToDivision(SqlDataReader reader)
+        {
+            Divisions division = new Divisions();
+            division.Id = (int)reader["id"];
+            division.Courses_id = reader["courses_id"].ToString();
+            division.Capacity = int.Parse(reader["capacity"].ToString());
+            division.Time = reader["time"].ToString();
+            division.Date = reader["date"].ToString();
+            division.Lecturer = reader["lecturer"].ToString();
+            return division;
         }
     }
 }
