@@ -38,8 +38,31 @@ namespace UniversitySystem.Repositories
 
         public List<Divisions> GetAllDivisions()
         {
-            throw new NotImplementedException();
+            List<Divisions> division = new List<Divisions>();
+            using (SqlConnection conn = new SqlConnection(ConnectWithDB.ConnectionString))
+            {
+                string query = "select * from Division";
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            division.Add(MapReaderToDivision(reader));
+                        }
+                    }
+                }
+
+            }
+
+
+            return division;
         }
+
+
+
         public Divisions GetDivisionById(int id, string courseId)
         {
             using (SqlConnection conn = new SqlConnection(ConnectWithDB.ConnectionString))
