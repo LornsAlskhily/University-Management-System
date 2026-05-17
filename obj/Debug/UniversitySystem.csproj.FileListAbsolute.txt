@@ -18,3 +18,12 @@ D:\Lorns\Projects\git\UnivSys\University-Management-System\obj\Debug\UniversityS
 D:\Lorns\Projects\git\UnivSys\University-Management-System\bin\Debug\UniversitySystem.dll.config
 D:\Lorns\Projects\git\UnivSys\University-Management-System\bin\Debug\UniversitySystem.dll
 D:\Lorns\Projects\git\UnivSys\University-Management-System\obj\Debug\UniversitySystem.dll
+C:\Users\GolDRoger\Documents\GitHub\University-Management-System\bin\Debug\UniversitySystem.dll.config
+C:\Users\GolDRoger\Documents\GitHub\University-Management-System\bin\Debug\UniversitySystem.dll
+C:\Users\GolDRoger\Documents\GitHub\University-Management-System\bin\Debug\UniversitySystem.pdb
+C:\Users\GolDRoger\Documents\GitHub\University-Management-System\obj\Debug\UniversitySystem.csproj.AssemblyReference.cache
+C:\Users\GolDRoger\Documents\GitHub\University-Management-System\obj\Debug\UniversitySystem.Properties.Resources.resources
+C:\Users\GolDRoger\Documents\GitHub\University-Management-System\obj\Debug\UniversitySystem.csproj.GenerateResource.cache
+C:\Users\GolDRoger\Documents\GitHub\University-Management-System\obj\Debug\UniversitySystem.csproj.CoreCompileInputs.cache
+C:\Users\GolDRoger\Documents\GitHub\University-Management-System\obj\Debug\UniversitySystem.dll
+C:\Users\GolDRoger\Documents\GitHub\University-Management-System\obj\Debug\UniversitySystem.pdb
