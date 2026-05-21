@@ -1,19 +1,39 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 using UniversitySystem.Interfaces;
 using UniversitySystem.Models;
+using UniversitySystem.Repositories;
 
 namespace UniversitySystem.Services
 {
     public class DivisionsServices : IDivisionsServices
     {
-        public string IdGeneration()
+        IDivisionRepository _DivisionRepository;
+        public DivisionsServices(IDivisionRepository DivisionRepository)
         {
-            throw new NotImplementedException();
+            _DivisionRepository = DivisionRepository;
         }
+
+        bool DivisionValdation(Divisions division)
+        {
+            if (division == null) return false;
+            if (division.Id < 1 ||
+                division.CoursesId == null)
+                return false;
+            if (_DivisionRepository.GetDivisionById
+                (division.Id,division.CoursesId)
+                != null) return false;
+            return true;
+        }
+
+
         public bool CreateDivison  (Divisions divison, string courseId)
         {
-            throw new NotImplementedException();
+            return DivisionValdation(divison) ? _DivisionRepository.AddDivision(divison) : false;
         }
+
+
+
 
     }
 }

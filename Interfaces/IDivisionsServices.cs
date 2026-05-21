@@ -4,6 +4,6 @@ namespace UniversitySystem.Interfaces
 {
     internal interface IDivisionsServices
     {
-        bool CreateDivison(Divisions divison, string courseId);
+        bool CreateDivison(Divisions divison);
     }
 }

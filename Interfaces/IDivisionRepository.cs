@@ -3,7 +3,7 @@ using UniversitySystem.Models;
 
 namespace UniversitySystem.Interfaces
 {
-    internal interface IDivisionRepository
+    public interface IDivisionRepository
     {
         List<Divisions> GetAllDivisions();
         Divisions GetDivisionById(int id, string courseId);
