@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Data.SqlTypes;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UniversitySystem.Models;
 using UniversitySystem.Interfaces;
 
@@ -14,9 +10,11 @@ namespace UniversitySystem.Repositories
     {
         public Courses GetCourseById(string id)
         {
+
             using (SqlConnection conn = new SqlConnection(ConnectWithDB.ConnectionString))
             {
                 string query = "select * from Courses where id=@id";
+
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@id", id);
@@ -69,7 +67,7 @@ namespace UniversitySystem.Repositories
                 {
                     cmd.Parameters.AddWithValue("@Id", courses.Id);
                     cmd.Parameters.AddWithValue("@name", courses.Name);
-                    cmd.Parameters.AddWithValue("@prerequisite_id", courses.PrerequisiteId);
+                    cmd.Parameters.AddWithValue("@prerequisite_id",string.IsNullOrEmpty(courses.PrerequisiteId) ? DBNull.Value : (object)courses.PrerequisiteId);
                     cmd.Parameters.AddWithValue("@major", courses.Major);
                     cmd.Parameters.AddWithValue("@hours", courses.Hours);
                     cmd.ExecuteNonQuery();

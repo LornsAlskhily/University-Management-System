@@ -2,7 +2,7 @@
 
 namespace UniversitySystem.Interfaces
 {
-    internal interface ICoursesServices
+    public interface ICoursesServices
     {
         bool CreateCourse(Courses course); 
     }

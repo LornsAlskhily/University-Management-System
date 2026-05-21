@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\services\\coursesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:services\\coursesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -48,6 +49,18 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lorns\\AppData\\Local\\Temp\\5dwtthwp..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
+=======
+      "AbsoluteMoniker": "D:0:0:{CDC29573-1BC6-42DA-A119-8DD0198CB334}|..\\TestConsole\\TestConsole.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\TestConsole\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lorns\\AppData\\Local\\Temp\\33yy505v..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lorns\\AppData\\Local\\Temp\\33yy505v..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lorns\\AppData\\Local\\Temp\\33yy505v..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -60,6 +73,7 @@
           "SelectedChildIndex": 9,
           "Children": [
             {
+<<<<<<< Updated upstream
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "SQLQuery1.sql ",
@@ -106,16 +120,34 @@
               "ViewState": "AgIAAD8AAAAAAAAAAAAYwCYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-12T15:57:50.74Z",
+=======
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\lorns\\AppData\\Local\\Temp\\33yy505v..sql",
+              "ToolTip": "SQLQuery1.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-19T18:53:39.146Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 5,
+=======
+              "DocumentIndex": 0,
+>>>>>>> Stashed changes
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\TestConsole\\Program.cs",
               "RelativeDocumentMoniker": "..\\TestConsole\\Program.cs",
               "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\TestConsole\\Program.cs",
               "RelativeToolTip": "..\\TestConsole\\Program.cs",
+<<<<<<< Updated upstream
               "ViewState": "AgIAACUAAAAAAAAAAAAgwDYAAACZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-12T10:28:15.386Z",
@@ -198,6 +230,12 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-10T10:42:58.46Z",
               "EditorCaption": ""
+=======
+              "ViewState": "AgIAAC0AAAAAAAAAAAAvwD0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T10:28:15.386Z",
+              "EditorCaption": ""
+>>>>>>> Stashed changes
             }
           ]
         }

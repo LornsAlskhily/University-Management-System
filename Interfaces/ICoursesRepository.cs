@@ -3,7 +3,7 @@ using UniversitySystem.Models;
 
 namespace UniversitySystem.Interfaces
 {
-    internal interface ICoursesRepository
+    public interface ICoursesRepository
     {
         List<Courses> GetAllCourses();
         Courses GetCourseById(string id);
