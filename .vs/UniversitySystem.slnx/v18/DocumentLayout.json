@@ -3,19 +3,23 @@
   "WorkspaceRootPath": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|d:\\lorns\\projects\\git\\univsys\\university-management-system\\connectwithdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:connectwithdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|d:\\lorns\\projects\\git\\univsys\\university-management-system\\interfaces\\idivisionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:interfaces\\idivisionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|d:\\lorns\\projects\\git\\univsys\\university-management-system\\services\\divisionsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\services\\divisionsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:services\\divisionsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|d:\\lorns\\projects\\git\\univsys\\university-management-system\\models\\divisions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\models\\divisions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:models\\divisions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|d:\\lorns\\projects\\git\\univsys\\university-management-system\\services\\coursesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\services\\coursesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B2318B5-FFE4-4249-9C23-7655C780C9F2}|UniversitySystem.csproj|solutionrelative:services\\coursesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -33,8 +37,25 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "ConnectWithDB.cs",
+              "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\ConnectWithDB.cs",
+              "RelativeDocumentMoniker": "ConnectWithDB.cs",
+              "ToolTip": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\ConnectWithDB.cs*",
+              "RelativeToolTip": "ConnectWithDB.cs*",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAYAAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T18:08:30.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Divisions.cs",
               "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Models\\Divisions.cs",
               "RelativeDocumentMoniker": "Models\\Divisions.cs",
@@ -42,12 +63,11 @@
               "RelativeToolTip": "Models\\Divisions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T17:51:38.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-21T17:51:38.259Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "IDivisionRepository.cs",
               "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Interfaces\\IDivisionRepository.cs",
               "RelativeDocumentMoniker": "Interfaces\\IDivisionRepository.cs",
@@ -60,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DivisionsServices.cs",
               "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Services\\DivisionsServices.cs",
               "RelativeDocumentMoniker": "Services\\DivisionsServices.cs",
@@ -68,16 +88,11 @@
               "RelativeToolTip": "Services\\DivisionsServices.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAYwB4AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T16:23:24.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "WhenOpened": "2026-05-21T16:23:24.731Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UserServices.cs",
               "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Services\\UserServices.cs",
               "RelativeDocumentMoniker": "Services\\UserServices.cs",
@@ -89,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CoursesServices.cs",
               "DocumentMoniker": "D:\\Lorns\\Projects\\git\\UnivSys\\University-Management-System\\Services\\CoursesServices.cs",
               "RelativeDocumentMoniker": "Services\\CoursesServices.cs",
@@ -97,8 +112,7 @@
               "RelativeToolTip": "Services\\CoursesServices.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAA+wBUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T00:24:53.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-20T00:24:53.38Z"
             }
           ]
         }

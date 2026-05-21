@@ -1,7 +1,4 @@
 .vs/
-*.rsuser
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-*.env
+.vs\UniversitySystem.slnx\v18\.suo
+.vs\UniversitySystem.slnx\v18\DocumentLayout.backup.json
+.vs\UniversitySystem.slnx\v18\DocumentLayout.json
