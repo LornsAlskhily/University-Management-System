@@ -5,3 +5,10 @@
 /.vs
 .vs/UniversitySystem.slnx/v18/.suo
 /obj
+.vs/UniversitySystem.csproj.dtbcache.json
+.vs/UniversitySystem.slnx/v18/.suo
+.vs/UniversitySystem.slnx/v18/DocumentLayout.backup.json
+.vs/UniversitySystem.slnx/v18/DocumentLayout.json
+bin/Debug/UniversitySystem.dll
+bin/Debug/UniversitySystem.pdb
+UniversitySystem.slnx

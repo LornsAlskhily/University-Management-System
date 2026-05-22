@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 using UniversitySystem.Interfaces;
 using UniversitySystem.Models;
@@ -19,11 +20,11 @@ namespace UniversitySystem.Repositories
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Id", divisons.Id);
-                    cmd.Parameters.AddWithValue("@CoursesId", divisons.Courses_id);
+                    cmd.Parameters.AddWithValue("@CoursesId", divisons.CoursesId );
                     cmd.Parameters.AddWithValue("@Capacity", divisons.Capacity);
-                    cmd.Parameters.AddWithValue("@Time", divisons.Time);
-                    cmd.Parameters.AddWithValue("@Date", divisons.Date);
-                    cmd.Parameters.AddWithValue("@Lecturer", divisons.Lecturer);
+                    cmd.Parameters.AddWithValue("@Time", string.IsNullOrEmpty(divisons.Time) ? DBNull.Value : (object)divisons.Time);
+                    cmd.Parameters.AddWithValue("@Date", string.IsNullOrEmpty(divisons.Date) ? DBNull.Value : (object)divisons.Date);
+                    cmd.Parameters.AddWithValue("@Lecturer", string.IsNullOrEmpty(divisons.Lecturer) ? DBNull.Value : (object)divisons.Lecturer);
                     cmd.ExecuteNonQuery();
                     return true;
                 }
@@ -83,7 +84,7 @@ namespace UniversitySystem.Repositories
         {
             Divisions division = new Divisions();
             division.Id = (int)reader["id"];
-            division.Courses_id = reader["courses_id"].ToString();
+            division.CoursesId = reader["courses_id"].ToString();
             division.Capacity = int.Parse(reader["capacity"].ToString());
             division.Time = reader["time"].ToString();
             division.Date = reader["date"].ToString();

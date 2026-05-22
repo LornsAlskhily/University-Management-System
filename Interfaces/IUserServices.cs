@@ -1,9 +1,10 @@
-﻿using UniversitySystem.Models;
+﻿using System;
+using UniversitySystem.Models;
 
 namespace UniversitySystem.Interfaces
 {
-    internal interface IUserServices
+    public interface IUserServices
     {
-        bool CreateCourse(Courses course);
+        Users Signin(string id, string password);
     }
 }

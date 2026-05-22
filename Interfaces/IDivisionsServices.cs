@@ -2,7 +2,7 @@
 
 namespace UniversitySystem.Interfaces
 {
-    internal interface IDivisionsServices
+    public interface IDivisionsServices
     {
         bool CreateDivison(Divisions divison);
     }

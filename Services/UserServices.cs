@@ -6,14 +6,10 @@ namespace UniversitySystem.Services
 {
     public class UserServices : IUserServices
     {
-        public string IdGeneration()
+        public Users Signin(string id, string password)
         {
+            //if ()
             throw new NotImplementedException();
         }
-        public bool CreateCourse(Courses course)
-        {
-            throw new NotImplementedException();
-        }
-
     }
 }

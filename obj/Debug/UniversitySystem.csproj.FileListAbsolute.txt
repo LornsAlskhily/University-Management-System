@@ -18,3 +18,12 @@ D:\Lorns\Projects\git\UnivSys\University-Management-System\obj\Debug\UniversityS
 D:\Lorns\Projects\git\UnivSys\University-Management-System\bin\Debug\UniversitySystem.dll.config
 D:\Lorns\Projects\git\UnivSys\University-Management-System\bin\Debug\UniversitySystem.dll
 D:\Lorns\Projects\git\UnivSys\University-Management-System\obj\Debug\UniversitySystem.dll
+E:\lorns\projects\University-Management-System\University-Management-System\obj\Debug\UniversitySystem.csproj.AssemblyReference.cache
+E:\lorns\projects\University-Management-System\University-Management-System\obj\Debug\UniversitySystem.Properties.Resources.resources
+E:\lorns\projects\University-Management-System\University-Management-System\obj\Debug\UniversitySystem.csproj.GenerateResource.cache
+E:\lorns\projects\University-Management-System\University-Management-System\obj\Debug\UniversitySystem.csproj.CoreCompileInputs.cache
+E:\lorns\projects\University-Management-System\University-Management-System\obj\Debug\UniversitySystem.dll
+E:\lorns\projects\University-Management-System\University-Management-System\obj\Debug\UniversitySystem.pdb
+E:\lorns\projects\University-Management-System\University-Management-System\bin\Debug\UniversitySystem.dll.config
+E:\lorns\projects\University-Management-System\University-Management-System\bin\Debug\UniversitySystem.dll
+E:\lorns\projects\University-Management-System\University-Management-System\bin\Debug\UniversitySystem.pdb

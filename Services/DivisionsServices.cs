@@ -27,13 +27,10 @@ namespace UniversitySystem.Services
         }
 
 
-        public bool CreateDivison  (Divisions divison, string courseId)
+        public bool CreateDivison  (Divisions divison)
         {
             return DivisionValdation(divison) ? _DivisionRepository.AddDivision(divison) : false;
         }
-
-
-
 
     }
 }
