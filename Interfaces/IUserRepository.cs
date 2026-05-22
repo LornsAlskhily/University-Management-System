@@ -8,6 +8,6 @@ namespace UniversitySystem.Interfaces
          bool AddUser(Users user);
         List<Users> GetAllUsers();
         Users GetUserById(string id);
-        bool CheckPassword(string id, string password);
+        Users CheckPassword(string id, string password);
     }
 }

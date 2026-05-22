@@ -60,44 +60,38 @@ namespace UniversitySystem.Repositories
         public Users GetUserById(string id)
         {
 
-            try
+            using (SqlConnection conn = new SqlConnection(ConnectWithDB.ConnectionString))
             {
-                using (SqlConnection conn = new SqlConnection(ConnectWithDB.ConnectionString))
+                string query = "select * from Users where id = @id";
+                using (SqlCommand cmd = new SqlCommand(query,conn))
                 {
-                    string query = "select * from Users where id = @id";
-                    using (SqlCommand cmd = new SqlCommand(query,conn))
-                    {
-                        cmd.Parameters.AddWithValue("@id", id);
+                    cmd.Parameters.AddWithValue("@id", id);
 
-                        conn.Open();
-                        using (SqlDataReader reader = cmd.ExecuteReader()) {
+                    conn.Open();
+                    using (SqlDataReader reader = cmd.ExecuteReader()) {
 
-                            return reader.Read() ? MapReaderToUser(reader) : null;
+                        return reader.Read() ? MapReaderToUser(reader) : null;
 
-                        }       
-                    }
+                    }       
                 }
             }
-            catch (Exception)
-            {
-                throw;
-            }
-            
-
         }
 
-        public bool CheckPassword(string id, string password)
+        public Users CheckPassword(string id, string password)
         {
             using (SqlConnection conn = new SqlConnection(ConnectWithDB.ConnectionString))
             {
                 conn.Open();          
-                string query = "select password from users where id = @id";
+                string query = "select * from users where id = @id and password = @password";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@id", id);
-                    object result = cmd.ExecuteScalar();
-                    if (result == null) return false;
-                    return result.ToString() == password;
+                    cmd.Parameters.AddWithValue("@password", password);
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        return reader.Read() ? MapReaderToUser(reader) : null;
+                    }
+
                 }
             }
 
