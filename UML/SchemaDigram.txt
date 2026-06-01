@@ -1,0 +1,60 @@
+
+//use dbdiagram.io web
+
+Table Users {
+  id varchar [primary key]
+  role enum 
+  password varchar
+  full_name varchar
+}
+
+Table Student{
+  id varchar [primary key] 
+  balance integer
+}
+
+Table Finance{
+  id varchar [primary key]
+}
+
+Table Courses{
+  id varchar [primary key]
+  name varchar 
+  preRequisite_id varchar 
+  major varchar
+  hours integer
+}
+
+Table Division{
+  id integer [primary key]
+  Courses_id varchar [primary key]
+  Capacity integer
+  time varchar
+  date varchar 
+  lecturer_id varchar
+}
+
+Table Payment{
+  id varchar [primary key]
+  amount float
+  status enum
+  pay_date datetime
+  resolved_date datetime
+  student_id varchar
+  Finance_id varchar
+}
+
+
+ref: Courses.preRequisite_id > Courses.id
+
+ref: Division.Courses_id > Courses.id
+
+ref: Division.lecturer_id > Users.id
+
+ref: Student.id - Users.id
+
+ref : Finance.id - Users.id
+
+ref:Payment.student_id > Student.id
+
+ref: Payment.Finance_id > Finance.id
