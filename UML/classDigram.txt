@@ -1,0 +1,271 @@
+---
+use mermaid.ai
+---
+classDiagram
+    class Courses{
+       string id
+       string name
+       string preRequisiteId
+       string major
+       int hours
+    }
+
+    class Users{
+       string id
+       string fullName
+       UserRole role
+       string password
+    }
+    
+
+    class Division{
+     int id
+     string CourseId
+     int Capacity
+     string time
+     string  date
+     string lecturerId
+    }
+    class Student{
+       decimal balance
+    }
+
+    class Finance{
+
+    }
+
+    class Payment{
+       string id
+       decimal amount
+       Status status
+       datetime payDate
+       datetime resolvedDate
+       string studentId
+       string FinanceId
+    }
+
+
+
+     class UsersServices{
+       Users Signin(string id, string password)
+    }
+
+    class CoursesServices{
+       bool CreateCourse(Courses course)
+    }
+
+    class DivisionServices{
+       bool CreateDivison(Divisions divison)
+    }
+
+    class StudentServices{
+      decimal GetBalance(string id)
+      bool UpdateBalance(string id , decimal amount)
+    }
+
+    
+    class PaymentServices{
+      Payment GetPayment(string id)
+      bool SubmitPayment(Payment payment)
+      List<Payment> GetPaymentHistory()
+      bool ApprovePayment(string paymentId)
+      bool RejectPayment(string paymentId)
+
+    }
+
+
+    class IUsersServices{
+      <<interface>>
+       Users Signin(string id, string password)
+    }
+
+    class ICoursesServices{
+      <<interface>>
+       bool CreateCourse(Courses course)
+    }
+
+    class IDivisionServices{
+      <<interface>>
+       bool CreateDivison(Divisions divisons)
+    }
+
+    class IStudentServices{
+      <<interface>>
+      decimal GetBalance(string id)
+      bool UpdateBalance(string id , decimal amount)
+    }
+
+    class IPaymentServices{
+      <<interface>>
+      Payment GetPayment(string id)
+      bool SubmitPayment(Payment payment)
+      List<Payment> GetPaymentHistory()
+      bool ApprovePayment(string paymentId)
+      bool RejectPayment(string paymentId)
+
+    }
+
+
+
+    class IUserRepository{
+      <<interface>>
+     List GetAllUsers <Users>()
+     Users GetUserById (string id)
+     bool AddUser (Users user)
+     bool CheckPassword (string id, string password)
+    }
+    
+    class IDivisionRepository{
+      <<interface>>
+     List GetAllDivisions <Divisions>()
+     Division GetDivisionById (int id,string CourseId)
+     bool AddDivision (Divisions divisons)
+    }
+    class ICourseRepository{
+      <<interface>>
+     List GetAllCourses <Courses>()
+     Courses GetCourseById (string id)
+     bool AddCourse (Courses course)
+    }
+
+    class IStudentRepository{
+      <<interface>>
+      decimal GetBalance(string id)
+      bool UpdateBalance(string id , decimal amount)
+    }
+
+    class IPaymentRepository{
+      <<interface>>
+      Payment GetPayment(string id)
+      bool  AddPayment(Payment Payment)
+      List<Payment> GetAllPayment()
+      bool ChangeStatus(string PaymentId,Status status)
+      
+    }
+
+    class UserRepository{
+     List<Users> GetAllUsers()
+     Users GetUserById (string id)
+     bool AddUser (Users user)
+     bool CheckPassword (string id, string password)
+    }
+    class CourseRepository{
+     List GetAllCourses <Courses>()
+     Courses GetCourseById (string id)
+     bool AddCourse (Courses course)
+    }
+    class DivisionRepository{
+     List GetAllDivisions <Divisions>()
+     Division GetDivisionById (int id,CourseId)
+     bool AddDivision (Divisoins divisons)
+    }
+
+    class StudentRepository{
+      decimal GetBalance(string id)
+      bool UpdateBalance(string id , decimal amount)
+    }
+
+    class PaymentRepository{
+      Payment GetPayment(string id)
+      bool  AddPayment(Payment Payment)
+      List<Payment> GetAllPayment()
+      bool ChangeStatus(string PaymentId,Status status)
+      
+    }
+
+
+    class ConnectWithDB{
+      conninctonString string static
+    }
+
+
+
+    class UserRole{
+      <<enumeration>>
+      Admin
+      Registrar
+      Student
+      Finance
+      Lecturer
+    }
+
+    class Status{
+      <<enumeration>>
+      Rejected
+      Approved
+      Pending
+    }
+
+
+    Users ..> UserRole
+
+    IUsersServices<|..UsersServices
+
+    UsersServices --> IUserRepository
+    UsersServices ..> Users
+    UsersServices ..> UserRole
+
+
+    IUserRepository <|.. UserRepository
+    IUserRepository ..> Users
+    IUserRepository ..> UserRole
+
+    UserRepository ..>  ConnectWithDB
+    UserRepository ..> UserRole
+    UserRepository ..> Users
+
+    ICoursesServices <|.. CoursesServices
+
+    CoursesServices -->ICourseRepository
+    CoursesServices ..>Courses
+
+    ICourseRepository <|..CourseRepository
+    ICourseRepository ..> Courses
+
+
+    CourseRepository ..>ConnectWithDB
+    CourseRepository..>Courses
+
+    IDivisionServices<|..DivisionServices
+
+    DivisionServices -->IDivisionRepository
+    DivisionServices ..>Division
+
+    IDivisionRepository <|.. DivisionRepository
+    IDivisionRepository..>Division
+
+    DivisionRepository ..>ConnectWithDB
+    DivisionRepository ..> Division
+
+    Student --|> Users
+
+
+    IStudentServices<|..StudentServices
+
+    StudentServices --> IStudentRepository
+    StudentServices ..> Student
+
+
+    IStudentRepository <|.. StudentRepository
+
+    StudentRepository ..>  ConnectWithDB
+
+
+    Payment ..>  Status
+
+    IPaymentServices <|.. PaymentServices
+    IPaymentServices ..> Payment
+    
+    PaymentServices --> IPaymentRepository
+    PaymentServices ..> Payment
+
+    IPaymentRepository..> Payment
+    IPaymentRepository <|.. PaymentRepository
+
+    PaymentRepository ..> Payment
+    PaymentRepository ..>ConnectWithDB
+
+
+  Finance --|> Users
+
+
