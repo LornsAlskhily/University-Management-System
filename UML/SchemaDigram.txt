@@ -8,12 +8,12 @@ Table Users {
   full_name varchar
 }
 
-Table Student{
+Table Students{
   id varchar [primary key] 
-  balance integer
+  balance decimal
 }
 
-Table Finance{
+Table Finances{
   id varchar [primary key]
 }
 
@@ -27,16 +27,17 @@ Table Courses{
 
 Table Division{
   id integer [primary key]
-  Courses_id varchar [primary key]
+  Divsion_Number integer [unique]
+  Course_id varchar 
   Capacity integer
-  time varchar
-  date varchar 
+  time datetime
+  date datetime 
   lecturer_id varchar
 }
 
 Table Payment{
   id varchar [primary key]
-  amount float
+  amount decimal
   status enum
   pay_date datetime
   resolved_date datetime
@@ -47,14 +48,14 @@ Table Payment{
 
 ref: Courses.preRequisite_id > Courses.id
 
-ref: Division.Courses_id > Courses.id
+ref: Division.Course_id > Courses.id
 
 ref: Division.lecturer_id > Users.id
 
-ref: Student.id - Users.id
+ref: Students.id - Users.id
 
-ref : Finance.id - Users.id
+ref : Finances.id - Users.id
 
-ref:Payment.student_id > Student.id
+ref:Payment.student_id > Students.id
 
-ref: Payment.Finance_id > Finance.id
+ref: Payment.Finance_id > Finances.id
