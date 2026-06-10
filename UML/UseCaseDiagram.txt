@@ -1,0 +1,36 @@
+@startuml
+
+
+'                                 use plantuml.com
+
+
+left to right direction
+actor "Student" as student
+actor "Finance Employee" as finance
+actor "Registrar Employee" as registrar
+actor "User" as user
+
+
+package "University System" {
+  usecase "Sign in" as signin
+  usecase "Create Course" as createCourse
+  usecase "Create Division" as createDivision
+  usecase "Edit Division" as editDivision
+  usecase "Create Payment Request" as CreatePayment
+  usecase "View Payment Request" as displayPayment
+  usecase "Approve/Reject Payment Request" as changePaymentStatus
+}
+
+user --> signin
+student --|> user
+student --> CreatePayment
+
+finance --|> user
+finance --> displayPayment
+finance --> changePaymentStatus
+
+registrar--|> user
+registrar--> createCourse
+registrar--> createDivision
+registrar--> editDivision
+@enduml

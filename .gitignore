@@ -16,3 +16,5 @@ UniversitySystem.slnx
 obj/Debug/UniversitySystem.pdb
 obj/Debug/UniversitySystem.dll
 bin/Debug/UniversitySystem.dll
+obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+*.cache
