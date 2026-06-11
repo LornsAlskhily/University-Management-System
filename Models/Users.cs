@@ -1,4 +1,6 @@
 ﻿
+using UniversitySystem.Enums;
+
 namespace UniversitySystem.Models
 {
     public class Users
