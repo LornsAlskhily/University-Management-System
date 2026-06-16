@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using UniversitySystem.Models;
 using UniversitySystem.Interfaces;
+using System.Runtime.Remoting.Messaging;
 
 namespace UniversitySystem.Repositories
 {
@@ -57,9 +58,9 @@ namespace UniversitySystem.Repositories
         public bool AddCourse(Courses courses)
         {
 
-            if (courses == null) return false;
             using (SqlConnection conn = new SqlConnection(ConnectWithDB.ConnectionString))
             {
+                
 
                 conn.Open();
                 string query = "insert into Courses (id,name,prerequisite_id,major,hours) values (@Id,@name,@prerequisite_id,@major,@hours);";
@@ -70,9 +71,11 @@ namespace UniversitySystem.Repositories
                     cmd.Parameters.AddWithValue("@prerequisite_id",string.IsNullOrEmpty(courses.PrerequisiteId) ? DBNull.Value : (object)courses.PrerequisiteId);
                     cmd.Parameters.AddWithValue("@major", courses.Major);
                     cmd.Parameters.AddWithValue("@hours", courses.Hours);
-                    cmd.ExecuteNonQuery();
 
-                    return true;
+                    return cmd.ExecuteNonQuery() > 0 ? true : false;
+
+                    
+
                 }
                
             }

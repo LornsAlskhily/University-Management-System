@@ -22,8 +22,8 @@ namespace UniversitySystem.Repositories
                     cmd.Parameters.AddWithValue("@Id", divisons.Id);
                     cmd.Parameters.AddWithValue("@CoursesId", divisons.CoursesId );
                     cmd.Parameters.AddWithValue("@Capacity", divisons.Capacity);
-                    cmd.Parameters.AddWithValue("@Time", string.IsNullOrEmpty(divisons.Time) ? DBNull.Value : (object)divisons.Time);
-                    cmd.Parameters.AddWithValue("@Date", string.IsNullOrEmpty(divisons.Date) ? DBNull.Value : (object)divisons.Date);
+                    cmd.Parameters.AddWithValue("@Time", divisons.Time);
+                    cmd.Parameters.AddWithValue("@Date",divisons.Date);
                     cmd.Parameters.AddWithValue("@Lecturer", string.IsNullOrEmpty(divisons.Lecturer) ? DBNull.Value : (object)divisons.Lecturer);
                     cmd.ExecuteNonQuery();
                     return true;
@@ -83,11 +83,14 @@ namespace UniversitySystem.Repositories
         private Divisions MapReaderToDivision(SqlDataReader reader)
         {
             Divisions division = new Divisions();
-            division.Id = (int)reader["id"];
+            DateTime x; 
+            division.Id = reader["id"].ToString();
             division.CoursesId = reader["courses_id"].ToString();
             division.Capacity = int.Parse(reader["capacity"].ToString());
-            division.Time = reader["time"].ToString();
-            division.Date = reader["date"].ToString();
+	    DateTime.TryParse( reader["time"].ToString() ,out x);
+            division.Time = x;
+	    DateTime.TryParse( reader["date"].ToString() ,out x);
+            division.Date = x;
             division.Lecturer = reader["lecturer"].ToString();
             return division;
         }

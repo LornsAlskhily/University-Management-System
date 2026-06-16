@@ -1,5 +1,5 @@
 ﻿
-namespace UniversitySystem.Models
+namespace UniversitySystem.Enums
 {
     public enum UserRole
     {

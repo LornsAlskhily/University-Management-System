@@ -2,53 +2,53 @@
 //use dbdiagram.io web
 
 Table Users {
-  id varchar [primary key]
-  role enum 
-  password varchar
-  full_name varchar
+  id varchar(20) [primary key]
+  full_name varchar(50) 
+  role varchar(25) [not null]
+  password varchar(200) [not null]
 }
 
 Table Students{
   id varchar [primary key] 
-  balance decimal
+  balance decimal(18,5) [not null]
 }
 
 Table Finances{
-  id varchar [primary key]
+  id varchar(20) [primary key]
 }
 
 Table Courses{
-  id varchar [primary key]
-  name varchar 
-  preRequisite_id varchar 
-  major varchar
+  id varchar(20) [primary key]
+  name varchar(100) [not null]
+  preRequisite_id varchar (20)
+  major varchar(20)
   hours integer
 }
 
 Table Division{
   id integer [primary key]
-  Divsion_Number integer [unique]
-  Course_id varchar 
-  Capacity integer
+  divsion_Number integer [unique, not null]
+  course_id varchar(20) [not null]
+  capacity integer
   time datetime
   date datetime 
-  lecturer_id varchar
+  lecturer_id varchar(20) 
 }
 
 Table Payment{
-  id varchar [primary key]
-  amount decimal
-  status enum
-  pay_date datetime
-  resolved_date datetime
-  student_id varchar
-  Finance_id varchar
+  id varchar(50) [primary key]
+  amount decimal(18,5) [not null]
+  payment_status varchar(50) [not null]
+  pay_date varchar(50) [not null]
+  resolved_date datetime 
+  student_id varchar(20) [not null]
+  Finance_id varchar(20) [not null]
 }
 
 
 ref: Courses.preRequisite_id > Courses.id
 
-ref: Division.Course_id > Courses.id
+ref: Division.course_id > Courses.id
 
 ref: Division.lecturer_id > Users.id
 

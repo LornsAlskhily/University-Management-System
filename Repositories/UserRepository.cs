@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using UniversitySystem.Models;
 using UniversitySystem.Interfaces;
+using UniversitySystem.Enums;
 
 
 namespace UniversitySystem.Repositories
@@ -13,7 +14,6 @@ namespace UniversitySystem.Repositories
         public bool AddUser(Users user)
         {
 
-            if (user == null) return false;
 
 
             using (SqlConnection conn = new SqlConnection(ConnectWithDB.ConnectionString))
