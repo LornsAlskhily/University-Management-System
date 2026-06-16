@@ -7,7 +7,7 @@ using System.Runtime.Remoting.Messaging;
 
 namespace UniversitySystem.Repositories
 {
-    public class CoursesRepository : ICoursesRepository
+    public class CoursesRepositoryADO : ICoursesRepository
     {
         public Courses GetCourseById(string id)
         {

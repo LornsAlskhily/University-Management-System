@@ -8,7 +8,7 @@ using UniversitySystem.Enums;
 
 namespace UniversitySystem.Repositories
 {
-    public class UserRepository : IUserRepository
+    public class UserRepositoryADO : IUserRepository
     {
 
         public bool AddUser(Users user)
@@ -23,7 +23,7 @@ namespace UniversitySystem.Repositories
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@id", user.Id);
-                    cmd.Parameters.AddWithValue("@username", user.Username);
+                    cmd.Parameters.AddWithValue("@username", user.FullName);
                     cmd.Parameters.AddWithValue("@Role", user.Role.ToString());
                     cmd.Parameters.AddWithValue("@Password", user.Password);
                     cmd.ExecuteNonQuery();
@@ -103,7 +103,7 @@ namespace UniversitySystem.Repositories
             Users user = new Users();
 
             user.Id = reader["id"].ToString();
-            user.Username = reader["username"].ToString();
+            user.FullName = reader["username"].ToString();
             user.Password = reader["password"].ToString();
 
             user.Role = (UserRole)Enum.Parse(typeof(UserRole), reader["role"].ToString());

@@ -6,7 +6,7 @@ using UniversitySystem.Models;
 
 namespace UniversitySystem.Repositories
 {
-    public class DivisionRepository : IDivisionRepository
+    public class DivisionRepositoryADO : IDivisionRepository
     {
         public bool AddDivision(Divisions divisons)
         {

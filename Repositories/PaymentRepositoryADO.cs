@@ -5,10 +5,10 @@ using UniversitySystem.Models;
 
 namespace UniversitySystem.Repositories
 {
-    public class PaymentRepository : IPaymentRepository
+    public class PaymentRepositoryADO : IPaymentRepository
     {
 
-        public PaymentRepository()
+        public PaymentRepositoryADO()
         {
 
         }
